@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>네비</title>
+    <style>
+      ul.first {
+        display: flex;
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+      }
+      .container {
+        width: 200px;
+        height: 100vh;
+      }
+      .first.container {
+        background-color: red;
+      }
+      .second.container {
+        background-color: blue;
+      }
+      .third.container {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <ul class="first">
+        <li><a href="#first">frist</a></li>
+        <li><a href="#second">second</a></li>
+        <li><a href="#third">third</a></li>
+      </ul>
+
+      <div class="first container" id="first">1</div>
+      <div class="second container" id="second">2</div>
+      <div class="third container" id="third">3</div>
+    </header>
+  </body>
+</html>
