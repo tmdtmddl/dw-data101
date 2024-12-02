@@ -30,7 +30,7 @@ body {
 .leftbox{
     height: 200px;
     background:pink;
-    padding-left: 25px;
+    /* padding-left: 25px; */
 }
 .rightbox{
     height: 200px;
