@@ -1,0 +1,64 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+}
+.wrap{
+    width:1200px;
+    border:2px solid black;
+    margin:0 auto;
+}
+.header{
+    width:100%;
+    border:2px solid red;
+    /* height: 200px; 패딩넣을려면 높이빼고*/
+    /* vertical-align: middle;->수직정렬 모든태그동작하지않는다*/
+    padding:50px 0;
+    text-align: center;
+}
+.menu{
+    font-size:30px;
+    padding:0 20px;
+}
+.menu:hover{ /*마우스커서가 위에 올라오면 동작*/
+    cursor: pointer;
+    color:red;
+    background-color: yellow;
+}
+.hot{
+    list-style:none;
+    font-size:25px;
+    line-height: 50px;
+    /* padding:50px 0; li를 벌리려면 ul말고li에 줘야된다*/
+    padding:0;
+} 
+li{
+    /* padding:50px 0; */
+}
+.main img{
+    width:100%
+}
+.main{
+    padding:50px;
+}
+.order{
+    list-style:none;
+    padding:0;
+}
+.footer{
+    background:gray;
+    padding:100px;
+
+}
+.addr{
+    color:white;
+    font-size:30px;
+
+}
+.make{
+    text-align:right;
+    color:yellow;
+    font-size:20px;
+
+}

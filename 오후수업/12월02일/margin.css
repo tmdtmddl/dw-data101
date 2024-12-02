@@ -1,0 +1,33 @@
+body{
+    margin:0;
+}
+
+.box1{
+    width:400px;
+    height:200px;
+    background-color:red;
+    /* padding-left: 50px; */
+    /* margin-left:50px; */
+    padding-left:50px;
+    padding-top:50px;
+    /* 빨간색크기커지지않게하는것 -> */
+    box-sizing:border-box;
+}
+.box1_child{
+    width:300px;
+    height: 100px;
+    background-color: blue;
+    /* margin-top: 50px;
+    margin-left:50px;
+    내가 생각한 모습과 다를수있어서 태그안 태그에는 마진사용잘 안한다. */ 
+}
+.box2{
+    border:1px solid red;
+    width:300px;
+    font-size:30px;
+    text-align: center;
+    /* 글자를 가운데 정렬하기위해 사용함 */
+    padding:20px 0;
+
+
+}
