@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* 패딩에 의해 넓이가변하지않도록 넓이가지정되어있는 태그만 */
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+.header {
+  width: 1000px;
+  margin: 0 auto;
+  background: gray;
+  color: white;
+  font-size: 25px;
+}
+.menu {
+  display: inline-block;
+  padding: 15px 30px;
+}
+.menu:hover {
+  background: white;
+  color: gray;
+  border-radius: 8px;
+}

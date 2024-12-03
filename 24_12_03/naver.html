@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* input:hover{
+            background-color: blue; */
+
+      input:focus {
+        outline-color: red;
+      }
+      fieldset {
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <label for="email">email</label>
+        <input type="text" id="email" />
+      </fieldset>
+      <fieldset>
+        <label for="password">password</label>
+        <input type="password" id="password" />
+      </fieldset>
+      <button type="reset">리셋</button>
+    </form>
+    <form>
+      <fieldset>
+        <input type="checkbox" name="" id="" />
+        <input type="radio" name="a" id="" /><input
+          type="radio"
+          name="a"
+          id=""
+        />
+      </fieldset>
+      <input type="submit" value="회원가입" />
+      <button type="submit">버튼</button>
+      <button type="reset">버튼</button>
+      <button type="button">버튼</button>
+
+      <input type="reset" value="리셋" />
+    </form>
+  </body>
+</html>

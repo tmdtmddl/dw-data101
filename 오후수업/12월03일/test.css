@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+}
+body {
+  width: 1000px;
+  margin: 0 auto;
+}
+span {
+  padding: 10px 20px;
+  color: white;
+  font-size: 30px;
+  display: inline-block;
+}
+
+span:hover {
+  cursor: pointer;
+  background-color: white;
+  color: blue;
+  border-radius: 8px;
+}
+
+.a {
+  background-color: blue;
+  border-radius: 8px;
+  padding: 0px 30px;
+}
+.b {
+  list-style: none;
+  line-height: 30px;
+  border-radius: 8px;
+}
+.c {
+  margin-left: 490px;
+}
+img {
+  border-radius: 8px;
+  margin: 10px 0;
+}
+li {
+  background-color: yellow;
+  border-radius: 10px;
+  margin: 10px;
+  width: 300px;
+  padding: 10px;
+}
