@@ -1,0 +1,32 @@
+/* 선택자기호
+#-id
+.-class
+:또는 :: -가상선택자 */
+
+#box1 {
+  width: 300px;
+  height: 300px;
+  background-color: pink;
+  /* margin-left: 100px; */
+  /* padding-left: 100px; 크기가 커지므로X */
+
+  /* margin은 여백이라서f12하면 흔적이 남음
+*/
+  position: relative;
+  /* left: 100px;
+  top: 150px; */
+  right: 100px;
+}
+#box2 {
+  width: 200px;
+  height: 200px;
+  background: lightgreen;
+  position: absolute;
+  /* 상위태가 바디라서 밑에서100px떨어진위치에생김 */
+  bottom: 100px;
+}
+#box3 {
+  width: 200px;
+  height: 200px;
+  background: lightcoral;
+}
