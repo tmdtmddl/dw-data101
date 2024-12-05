@@ -1,0 +1,47 @@
+body {
+  background-color: rgb(39, 37, 37);
+  color: whitesmoke;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+ul {
+  list-style: none;
+}
+button.globe {
+  height: 36px;
+  cursor: pointer;
+  border-radius: 18px;
+  background-color: transparent;
+  border: 1px solid;
+  color: whitesmoke;
+}
+header ul {
+  display: flex;
+  /* column-gap: 10px; */
+}
+button.globe img {
+  width: 16px;
+}
+button.login {
+  height: 36px;
+  cursor: pointer;
+  border-radius: 18px;
+  border: none;
+  transition: all.1s;
+}
+button.title {
+  font-size: 30px;
+  font-weight: 900;
+  color: rgb(190, 48, 48);
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+.m {
+  margin-right: 10px;
+}
+button.login:hover {
+  background-color: grey;
+}

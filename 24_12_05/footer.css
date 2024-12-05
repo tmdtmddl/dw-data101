@@ -1,0 +1,28 @@
+footer {
+  /* background-color: black; */
+}
+footer ul {
+  display: flex;
+  column-gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+footer li {
+  padding: 5px;
+}
+footer a {
+  color: whitesmoke;
+  padding: 5px;
+}
+/* a태그도 까불지말고 색바꿔라 */
+/* footer div.f2{
+    display:flex;
+    flex-direction: :column;
+    row-gap:50px;
+} */
+footer a:hover {
+  color: tomato;
+}
+div.f4 p {
+  font-size: 14px;
+}

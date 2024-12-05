@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* reset.css검색후 복붙하는 방법도있다 */
+.wrap {
+  display: flex;
+}
+
+header,
+ul,
+.wrap {
+  display: flex;
+  align-items: center;
+}
+header {
+  background-color: rgb(5, 70, 70);
+  height: 100px;
+}
+ul {
+  list-style: none;
+}
+
+header button {
+  color: whitesmoke;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+header > .wrap {
+  /* border: 1px solid black; */
+  justify-content: space-between;
+  width: 100%;
+  /* 와이드 100%를 왜 넣었지? */
+}
+header img {
+  width: 20px;
+  height: 20px;
+}

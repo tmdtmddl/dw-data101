@@ -1,0 +1,21 @@
+div.img {
+  border: 2px solid red;
+  position: relative;
+}
+div.img img {
+  width: 100%;
+  object-fit: cover;
+}
+div.img .ab {
+  position: absolute;
+  color: rgb(174, 236, 192);
+}
+div.img h1 {
+  top: 50px;
+  left: 50px;
+  /* 가운데에 놓고싶다면 레프트랑탑에 50%를 줌 */
+}
+div.img div {
+  bottom: 50px;
+  right: 50px;
+}

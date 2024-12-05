@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#wrap {
+  width: 800px;
+  margin: 50px auto;
+  position: relative;
+}
+#arrow {
+  position: absolute;
+  top: 0;
+}
+#left,
+#right {
+  position: absolute;
+  top: 200px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+  font-size: 40px;
+  opacity: 0.6;
+}
+#right {
+  /* position: absolute;
+  top: 200px;
+  padding: 10px;
+  background: white;
+  border-radius: 8px;
+  font-size: 40px;
+  opacity: 0.6; (부모가넓이를 가지지않아서 라이트를 하면 이미지밖으로 나가버린다.이경우에는#arrow에 넓이100%주고 높이100%를 주면 해결)*/
+  left: 700px;
+}
+#left {
+  /* position: absolute;
+    top: 200px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    font-size: 40px;
+    opacity: 0.6; */
+  left: 50px;
+}

@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#header {
+  background-color: blue;
+  width: 1200px;
+  position: relative;
+}
+.menu {
+  width: 200px;
+  background-color: black;
+  color: white;
+  padding: 25px 0;
+  text-align: center;
+  font-size: 30px;
+}
+#h {
+  position: relative;
+  left: 40px;
+}
+/* #i, #p, #s, #d{
+    position: absolute;
+    top:0; 이렇게 줘도 4개에 다적용
+} */
+#i {
+  position: absolute;
+  top: 0;
+  left: 270px;
+}
+#p {
+  position: absolute;
+  top: 0;
+  left: 500px;
+}
+#s {
+  position: absolute;
+  top: 0;
+  left: 730px;
+}
+#d {
+  position: absolute;
+  top: 0;
+  right: 40px;
+}
+#sub {
+  background-color: gray;
+  position: absolute;
+  top: 90px;
+  /* display: none; */
+  height: 0px;
+  transition: height 3s ease;
+  /*어떤것이변하는걸보여주는가  보여지는시간 어떤속도로면에표현 */
+}
+#p:hover #sub {
+  display: block;
+  height: 200px;
+}
