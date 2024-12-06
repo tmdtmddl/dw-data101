@@ -1,0 +1,73 @@
+header {
+  border: 1px solid black;
+  padding: 0 10px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+button.icon img {
+  width: 30px;
+  height: 30px;
+}
+
+button {
+  background-color: transparent;
+  border-style: none;
+  font-size: 20px;
+}
+
+ul button {
+  cursor: pointer;
+  height: 50px;
+}
+
+ul button:hover {
+  text-decoration: underline;
+}
+
+button.icon {
+  border-radius: 50px;
+  width: 50px;
+
+  transition: all 0.5s;
+}
+
+button.icon:hover {
+  background-color: lightcyan;
+}
+
+ul button {
+  padding: 10px;
+}
+
+button.user {
+  background-color: orange;
+  border-radius: 50%;
+  width: 50px;
+  color: whitesmoke;
+  padding: 0;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button.user:hover {
+  text-decoration: none;
+}
+button.user div {
+  /* border: 1px solid; */
+  border-radius: 50%;
+  width: 75%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button.user:hover {
+  text-decoration: none;
+}

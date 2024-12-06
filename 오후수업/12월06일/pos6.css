@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#wrap {
+  width: 800px;
+  margin: 0 auto;
+}
+#header {
+  background-color: lightblue;
+  padding: 20px 0;
+  position: sticky;
+  top: 0px;
+}
+
+.menu {
+  padding: 0 30px;
+}
+
+#move {
+  position: fixed;
+  left: 100px;
+  bottom: 150px;
+  color: red;
+  border: 1px solid black;
+  border-radius: 20px;
+}

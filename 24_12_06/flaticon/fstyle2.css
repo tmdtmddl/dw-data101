@@ -26,15 +26,28 @@ header button {
   background-color: transparent;
   cursor: pointer;
   border: none;
+  height: 60px;
+  padding: 0 10px;
 }
 header > .wrap {
   /* border: 1px solid black; */
   justify-content: space-between;
   width: 100%;
   /* 와이드 100%를 왜 넣었지? 태그에만 넓이를 주기때문에 뒤로늘리려면 100%줘야함 */
+  /* flex:1;를 줘도 넓이 100%준것랑똑같은 효과 */
   /* border: 1px solid red; */
 }
 header img {
   width: 20px;
   height: 20px;
 }
+/* button:active {
+  background-color: red;
+} */
+button.title {
+  font-size: 20px;
+  font-weight: 900;
+}
+/* header > .flex {
+  justify-content: ;
+} */

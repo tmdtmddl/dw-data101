@@ -1,0 +1,45 @@
+/* header {
+  border: 1px solid rgb(126, 126, 3);
+}
+.f {
+  display: flex;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+div.f {
+  justify-content: space-between;
+}
+
+ul.u {
+  justify-content: space-between;
+}
+
+ul.f {
+  column-gap: 10px;
+} */
+header {
+  border: 1px solid rgb(143, 143, 9);
+}
+
+button {
+  background-color: transparent;
+  border-style: none;
+}
+
+.f {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sb {
+  justify-content: space-between;
+}
