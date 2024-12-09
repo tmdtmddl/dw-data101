@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #box1 {
+        background-color: red;
+        /* height: 40px; */
+        clear: both;
+      }
+      #outbox::before {
+        /*::after->가상선택자(after을 쓰면 뒤에 붙고 before을 쓰면 앞에 붙는다) */
+        content: "abc";
+      }
+      #box1::after {
+        content: ""; /*after에 값이 들어갈수 있는 자리만 확보 */
+        clear: both;
+        display: table;
+      }
+      .divbox {
+        float: left;
+        width: 100px;
+        border: 1px solid black;
+      }
+
+      .child {
+        float: left;
+      }
+      .child:nth-child(3) {
+        /* nth-child(자식번호)
+        첫번째자식태그:nth-child(1) or first-child
+        마지막 자식태그: last-child */
+        float: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box1">
+      <div class="divbox">메뉴1</div>
+      <div class="divbox">메뉴2</div>
+      <div class="divbox">메뉴3</div>
+      <div class="divbox">메뉴4</div>
+    </div>
+    <div id="outbox">나는 메뉴보다 아래쪽에 있어야되</div>
+    <div>나는나는??</div>
+    <div>나는나는??</div>
+    <div id="floatbox">
+      <div class="child">박스1</div>
+      <div class="child">박스2</div>
+      <div class="child">박스3</div>
+    </div>
+    <div id="outbox2">나는 박스 밖이다.!!</div>
+  </body>
+</html>
+<!-- 
+이름짓는방법
+1.카멜 표기법->변수,함수(메서드),id {tableBlack처럼 2개의 이상의 단어연속이면 두번째단어부터 첫글자를 대문자로 표기}
+2.스네이크 표기법->데이터베이스 컬럼,class(tablw_black 단어사이사이에 _를 붙여서 표기한다.)
+3.헝가리안 표기법(이름에 접두사를 포함하여 짓는다.)ex)number_age {age가이름}
+4.파스칼 표기법->class명,table,함수형객체명-js기준-( ex)TableBlack, Table_Black 첫번째 단어부터 첫글자를 대문자로 표기)
+ -->

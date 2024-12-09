@@ -1,0 +1,54 @@
+.orange {
+  background-color: orange;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.item {
+  height: 100px;
+  /* width: 25%; */
+  /* 4개라서25%줌 */
+  /* 반응형으로할려면 부모태그에 넓이X */
+  /* 계산식=>calc(100% / 4) */
+  /* width: calc(100% / 4); */
+  width: 100px;
+}
+
+#wrap1 {
+  display: flex;
+  width: 1000px;
+  border: 1px solid black;
+  height: 250px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#wrap2 {
+  display: flex;
+  border: 1px solid black;
+  width: 1000px;
+  height: 300px;
+  justify-content: space-between;
+}
+
+#wrap2 .orange {
+  align-self: end;
+}
+
+#wrap2 .green {
+  align-self: end;
+}
+
+#wrap2 .pink {
+  align-self: center;
+}

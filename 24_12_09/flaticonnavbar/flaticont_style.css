@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background-color: black;
+  color: whitesmoke;
+}
+
+nav {
+  background-color: whitesmoke;
+  width: 160px;
+  height: 100vh;
+  padding: 20px;
+  /* 최종넓이=넓이+패딩
+  넓이를 200유지할려고 하지만 패딩을 20주니까 넓어져서 160이로 줄임 */
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+}
+
+div.ab {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  top: 300px;
+  right: 0px;
+  z-index: 1;
+}
+
+nav button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  height: 30px;
+}
+
+ul.auth {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+button.auth {
+  background-color: green;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+}
+
+button.login {
+  border: 1px solid white;
+  color: black;
+}
