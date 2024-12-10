@@ -1,0 +1,49 @@
+.flex1 {
+  background-color: blue;
+  display: flex;
+  padding-left: 20px;
+}
+.item1 {
+  /* height: 50px; 
+   line-height: 50px; 
+   단점:두줄이면 제대로 가운데에 오지않음 그래서 패딩으로 가운데에 위치하게 한줄이면 라인하르트도된다. */
+  padding: 15px 10px;
+}
+.ye {
+  background-color: yellow;
+}
+.green {
+  background-color: green;
+}
+.sky {
+  background-color: skyblue;
+}
+.r {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+.red {
+  background-color: red;
+}
+.gray {
+  background-color: gray;
+}
+.brown {
+  background-color: brown;
+}
+.item2:nth-child(3) {
+  font-size: 40px;
+  padding: 14px 20px;
+}
+.flex2 {
+  background-color: skyblue;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+.item2 {
+  padding: 30px 20px;
+}

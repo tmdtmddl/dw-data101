@@ -1,0 +1,46 @@
+.input {
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  max-width: 300px;
+  text-align: left;
+}
+
+.input form {
+  /* border: 1px solid; */
+  display: flex;
+}
+
+.input form button.b {
+  border-radius: 0;
+  border: none;
+  height: 40px;
+  background-color: #16ba88;
+  color: white;
+  cursor: pointer;
+  padding: 0 20px;
+}
+
+.input form input {
+  border-radius: 0;
+  border: 1px solid lightgray;
+  border-right: 0;
+  outline: none;
+  padding-left: 10px;
+  flex: 1;
+}
+
+.input form input:focus {
+  /* outline: 1px solid #16ba88; */
+  border-color: #16ba88;
+}
+
+.input label {
+  color: gray;
+  font-size: 12px;
+}
+
+.input form input::placeholder {
+  color: gray;
+}

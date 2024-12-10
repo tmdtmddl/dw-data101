@@ -1,0 +1,19 @@
+.item {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+#wrap1 {
+  display: flex;
+  /* width: 700px; */
+  /* 반응형을 하고싶으면 넓이를 넣지않기 */
+  height: 700px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 1px solid red;
+  justify-content: center;
+  /* column-gap: 10px; */
+  gap: 10px;
+  /* 이렇게 하면 column과row모두 들어간다. */
+}

@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+header,
+header ul {
+  display: flex;
+  /* column-gap: 10px; */
+}
+
+header button {
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 0 5px;
+}
+
+header {
+  background-color: rgb(32, 30, 30);
+  justify-content: space-between;
+  padding: 0 5px;
+  position: fixed;
+  z-index: 10000;
+  width: calc(100vw - 10px);
+  /* 100vw에서 패딩값을 뺐다. */
+  top: 0;
+  left: 0;
+}
+
+header button.title {
+  font-size: 20px;
+  font-weight: 900;
+}
