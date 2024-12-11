@@ -1,0 +1,47 @@
+.wrap {
+  background-color: blue;
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.item1 {
+  padding: 20px 30px;
+}
+.ye {
+  background-color: yellow;
+}
+.re {
+  background-color: red;
+}
+.gr {
+  background-color: gray;
+}
+.br {
+  background-color: brown;
+}
+
+.wrap2 {
+  display: flex;
+  background-color: blue;
+  justify-content: space-around;
+  padding: 10px;
+  height: 150px;
+  align-items: start;
+}
+.item2 {
+  padding: 20px 30px;
+}
+.yellow {
+  background-color: yellow;
+}
+.red {
+  background-color: red;
+}
+.gray {
+  background-color: gray;
+}
+.fr {
+  background-color: brown;
+  align-self: end;
+}

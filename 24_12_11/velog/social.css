@@ -1,0 +1,34 @@
+div.social ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  column-gap: 20px;
+}
+
+div.social button.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+div.social button.icon.gh {
+  background-color: rgb(24, 20, 20);
+  /* color: white; */
+}
+
+div.social button.icon.g {
+  background-color: white;
+  border: 1px solid gray;
+}
+
+div.social button.icon.f {
+  background-color: royalblue;
+  /* color: white; */
+}
+div.social button.icon.gh,
+.f {
+  color: white;
+}

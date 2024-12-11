@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+div.login {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  row-gap: 20px;
+  width: 300px;
+  margin: 0 auto;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  column-gap: 14px;
+}
+ul button {
+  border: none;
+  background-color: transparent;
+}
+button.bu {
+  color: white;
+  background-color: green;
+  border: none;
+  border-radius: 4px;
+  height: 40px;
+  cursor: pointer;
+}
+.login p {
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+}
+.login ul button {
+  background-color: transparent;
+  font-size: 12px;
+}

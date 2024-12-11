@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+div.login {
+  border: 1px solid lightgray;
+}
+ul {
+  display: flex;
+}
+ul button {
+  background-color: transparent;
+  border: none;
+}
+button.gin {
+  border: none;
+  background-color: green;
+  color: white;
+}
+div.hy {
+  display: flex;
+  flex-direction: column;
+}

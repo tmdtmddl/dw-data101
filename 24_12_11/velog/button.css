@@ -1,0 +1,9 @@
+button.s {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+button.s span {
+  color: green;
+}

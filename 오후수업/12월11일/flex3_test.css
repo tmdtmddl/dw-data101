@@ -1,0 +1,43 @@
+#wrap {
+  background-color: blue;
+  display: flex;
+  width: 800px;
+  height: 150px;
+  align-items: end;
+  justify-content: center;
+}
+.item {
+  /* padding은 계산해서넣어야함 그래서 높이를 라인하르트로 맞췄다. */
+  line-height: 70px;
+  padding: 0 25px;
+}
+div.red {
+  background-color: red;
+}
+div.gray {
+  background-color: gray;
+}
+div.brown {
+  background-color: brown;
+}
+.img_box img {
+  display: block;
+}
+#wrap2 {
+  display: flex;
+  width: 1000px;
+  height: 800px;
+}
+#side {
+  background-color: blue;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  row-gap: 20px;
+}
+#main {
+  background-color: orange;
+  width: 80%;
+}
