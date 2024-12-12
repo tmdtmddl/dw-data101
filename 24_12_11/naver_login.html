@@ -5,15 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>naver login</title>
     <link rel="stylesheet" href="./naver.css" />
+    <script src="index.js"></script>
   </head>
   <body>
     <div class="login">
       <p>네이버를 더 안전하고 편리하게 이용하세요</p>
-      <button class="bu">
+      <button class="naver" onclick="show()">
         <p><span>NAVER</span> 로그인</p>
       </button>
-      <ul>
+      <ul class="btns">
         <li><button>아이디 찾기</button></li>
+        <li><button>비밀번호 찾기</button></li>
+        <li><button>회원가입</button></li>
+      </ul>
+    </div>
+
+    <div class="login_modal flex" id="modal">
+      <button onclick="hide()">X</button>
+      <form class="flex">
+        <div class="inputs">
+          <input type="text" placeholder="아이디 또는 전화번호" />
+          <input type="password" placeholder="비밀번호" />
+        </div>
+        <div class="check">
+          <input type="checkbox" id="gh" />
+          <label for="gh">로그인 상태유지</label>
+        </div>
+        <button type="button" class="naver">로그인</button>
+      </form>
+      <ul class="btns">
+        <li><button>아이디찾기</button></li>
         <li><button>비밀번호 찾기</button></li>
         <li><button>회원가입</button></li>
       </ul>

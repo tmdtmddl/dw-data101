@@ -12,4 +12,105 @@ img {
 }
 #wrap {
   width: 1200px;
+  margin: 0 auto;
+}
+#header {
+  width: 100%;
+  margin-bottom: 50px;
+}
+#header .top {
+  padding-right: 15px;
+  text-align: right;
+}
+#header .nav {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+#header .top .top_texts {
+  display: flex;
+  justify-content: end;
+  padding: 7px 0;
+}
+#header .top .top_texts .top_text {
+  margin: 0 15px;
+  cursor: pointer;
+  position: relative;
+}
+#header .top .top_texts .top_text:nth-child(2)::before {
+  content: "";
+  border: 2px solid gray;
+  position: absolute;
+  height: 20px;
+  left: -15px;
+}
+#header .top .top_texts .top_text:nth-child(2)::after {
+  content: "";
+  border: 2px solid gray;
+  position: absolute;
+  height: 20px;
+  right: -15px;
+}
+#header .nav .menu_list {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 0;
+  font-size: 25px;
+}
+#header .nav .menu_list .menu {
+  cursor: pointer;
+  padding: 5px 25px;
+  position: relative;
+}
+#header .nav .menu_list .menu::before {
+  content: "";
+  border-bottom: 2px solid pink;
+  /* width: 100%; */
+  /* 마우스를 올렸을때만 보이게 하기위해 넓이를 hover로옮긴다. */
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  transition: width 1s ease;
+}
+#header .nav .menu_list .menu:hover::before {
+  width: 100%;
+}
+#header .nav .sub_menu_list {
+  position: absolute;
+  width: 100%;
+  background-color: beige;
+  left: 0;
+  padding: 50px 0;
+  z-index: 2;
+  opacity: 0;
+}
+#header .nav .sub_menu_list .sub_menu {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+#header .nav .sub_menu_list .sub_menu .sub {
+  width: 20%;
+  text-align: center;
+  padding: 20px 0;
+}
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+#main .img_box {
+  /* 한줄에 4개가들어 가게하고 싶어서 넓이를 줬다. */
+  /* width: 25%; */
+  /* gap을 준값빼기 */
+  /* width: calc(25% - 5px); */
+  /* flex-grow-비율,flex-shrink-공간부족여부 한번에주기 */
+  flex: 1 1 calc(25% - 5px);
+}
+#header .nav .menu_list:hover ~ .sub_menu_list {
+  opacity: 1;
 }
