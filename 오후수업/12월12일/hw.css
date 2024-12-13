@@ -66,12 +66,11 @@ img {
   content: "";
   border-bottom: 2px solid pink;
   /* width: 100%; */
-  /* 마우스를 올렸을때만 보이게 하기위해 넓이를 hover로옮긴다. */
+  width: 0%;
   display: block;
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 0%;
   transition: width 1s ease;
 }
 #header .nav .menu_list .menu:hover::before {
@@ -102,40 +101,29 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+  position: relative;
 }
 #main .img_box {
-  /* 한줄에 4개가들어 가게하고 싶어서 넓이를 줬다. */
-  /* width: 25%; */
-  /* gap을 준값빼기 */
-  /* width: calc(25% - 5px); */
-  /* flex-grow-비율,flex-shrink-공간부족여부 한번에주기 */
   flex: 1 1 calc(25% - 5px);
-  position: relative;
 }
 #header .nav .menu_list:hover ~ .sub_menu_list {
   opacity: 1;
 }
-
-#main .img_box .big {
+div.na {
   position: absolute;
-  z-index: -10;
-  width: 600px;
-  top: 50%;
-  left: 50%;
-  /* box-shadow: inset 0px 0px 30px rgb(0, 0, 0, 0.5); */
-  /* mask-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 1) 10%,
-    rgba(0, 0, 0, 0) 100%
-  ); */
-  mask-image: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 1) 80%,
-    rgb(0, 0, 0, 0) 100%
-  );
+  top: 600px;
+  left: 200px;
   opacity: 0;
 }
-#main .img_box:hover .big {
+div.jk:hover ~ .na {
   opacity: 1;
-  z-index: 100;
+}
+div.bf {
+  position: absolute;
+  top: 500px;
+  left: 200px;
+  opacity: 0;
+}
+div.bh:hover ~ .bf {
+  opacity: 1;
 }
