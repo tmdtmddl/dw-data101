@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //함수안에 만들어진 변수=지역변수=>자신이 만들어진 함수,메서드와 같은 특정영역 안에서만 활동하는 녀석 함수나메서드 종료시 지역변수도 종료된다.
+      //전역변수=특정영역에 귀속되지않는 변수(어느영역(모든함수,제어문)에서나 사용가능 변수)
+
+      //인풋태그에 뭔가를 작성하면 목록에 출력하는 이벤트만들기.
+      //   test_list = [];
+      const text_list = new Array();
+      window.onload = function () {
+        //태그에 이벤트 등록과 처리방법
+        //1. 태그 선택
+        var bt = document.getElementById("enrollment");
+        console.log(bt);
+        //2.이벤트 등록-이벤트 등록을 해아 기능이 동작된다.
+        //이벤트는 현재 문서객체에 등록한다.
+        // document.addEventListener("click", bt);
+        //태그객체.addEventListener('이벤트명',처리함수)
+        bt.addEventListener("click", function () {
+          //3.버튼을 클릭하면 동작할 내용 작성
+          //   alert("버튼을 클릭함");
+          //버튼을 클릭하면 input태그 안에 텍스트를 목록에 출력하기
+          var box = document.getElementById("box");
+          var text = box.value;
+          //   alert(text);
+          var list = document.getElementById("list");
+          text_list.push(text);
+          //var a = "가,나,다,라,마";
+          //var b = a.split(",");
+          //split=특정문자를 기준으로 배열화해줌
+          //배열은 연속적인 공간으로 이루어져있기에 인덱스라는 번호를 가지고 있다.
+          //인덱스는 0부터시작 한다.
+          //즉, 인덱스를 이용하면 첫번째 데이터부터 순차적으로 접근이 가능하다.
+          var str = "";
+          for (var i = 0; i < text_list.length; i++) {
+            str += text_list[i] + "<br>";
+          }
+          list.innerHTML = str;
+        });
+      };
+    </script>
+  </head>
+  <body>
+    <div>
+      <input type="text" id="box" value="하하하" />
+      <button id="enrollment">등록</button>
+    </div>
+    <div>
+      <h3>목록</h3>
+      <div id="list"></div>
+      <!-- 이위치(디브태그안)에 인풋태그에작성한 글자 띄우기 -->
+    </div>
+  </body>
+</html>
+<script>
+  //   var bt = document.getElementById("enrollment");
+  //   console.log(bt);
+</script>
