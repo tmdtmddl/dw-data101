@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      window.onload = function () {
+        var btn = document.getElementById("reg");
+        btn.addEventListener("click", reg_list);
+      };
+      function reg_list() {
+        var input = document.getElementById("my");
+        var text = input.value;
+        var ul = document.getElementById("bucket_list");
+        var li = document.createElement("li");
+        li.textContent = text;
+        //추가되는 항목의 삭제를 위한 버튼추가
+        var del = document.createElement("button");
+        del.textContent = "삭제";
+        del.addEventListener("click", delete_list);
+        li.appendChild(del);
+        li.setAttribute("class", "list");
+        ul.appendChild(li);
+      }
+      function delete_list() {
+        //삭제버튼클릭시 해당 텍스트 삭제
+        let parent = this.parentElement; //버튼의 부모가져오기(li)
+        console.log(parent);
+        parent.remove(); //li태그 삭제하기
+      }
+
+      //부모,형제, 자식 요소(태그) 찾는 방법
+      //1.부모 찾기
+      let child = document.getElementById("my"); //input
+      let parent = child.parentElement; //input 태그의 부모 찾기
+      child = document.querySelector("#my"); //
+      parent = child.parentElement;
+      //2.형제찾기
+      //<div><h2></h2><span id='a'></span></div>
+      //h2태그와 span태그는 형제관계임
+      //해당태그 앞의 형제 찾기(앞에앞에있는 형제는 2번해아한다.)
+      let a1 = document.querySelector("a");
+      let b1 = a1.previousElementSibling;
+      //뒤에 있는 형제 태그 찾기(뒤에뒤에있는 형제는 2번해아한다.)
+      let b2 = document.getElementById("b");
+      let a2 = b2.nextElementSibling;
+      //3.자식찾기
+      //<div id=p> <h3></h3> <p></p> <ul id=u></ul> </div>
+      let par = document.querySelector("#p");
+      let children = par.children; //모든 자식태그 가져오기.(배열로가져옴)
+      children[1].textContent = "둘째자식";
+      //선택자로 자식 찾기
+      let p = par.querySelector("#u");
+    </script>
+    <link rel="stylesheet" href="tag2.css" />
+  </head>
+  <body>
+    <div class="list_wrap">
+      버킷리스트 <input type="text" id="my" />
+      <button id="reg">등록</button>
+    </div>
+    <hr />
+    <div class="list_wrap">
+      <ul id="bucket_list">
+        <li class="list"></li>
+      </ul>
+    </div>
+  </body>
+</html>

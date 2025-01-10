@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      window.onload = function () {
+        var btn = document.getElementById("change");
+        btn.addEventListener("click", text_change);
+      };
+      function text_change() {
+        let par = document.getElementById("wrap");
+        //1.자식태그를 찾아서 변경
+        //const first =par.children[0]
+        //first.textContent="결혼한 자식"
+
+        let child = par.children;
+        // child[0].textContent = "결혼한 자식";
+        child[2].textContent = 15600;
+
+        //2.형제태그 찾아서 변경
+        let Brother = document.getElementsByClassName("chil list");
+        let change_bro = Brother[0].previousElementSibling;
+        change_bro.textContent = "결혼한 자식";
+        // let brother2 = Brother[0].nextElementSibling;
+        // brother2.textContent = 15600;
+
+        //3.버튼의 형제태그로 찾기
+        //const parent1 =this.previousElementSibling
+        //parent1.children[0].textContent='결혼한 자식'
+        //parent1.children[2].textContent=15600
+      }
+    </script>
+  </head>
+  <body>
+    <!-- 변경 버튼을 클릭하면 첫번째 자식의 텍스트를 결혼한 자식으로 변경 
+    1054를 15600으로 변경되게 하세요. -->
+    <div id="wrap">
+      <div class="first_child">첫번째 자식</div>
+      <div class="chil list">두번째 자식</div>
+      <div>1054</div>
+    </div>
+    <button id="change">변경</button>
+  </body>
+</html>

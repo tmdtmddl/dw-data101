@@ -1,0 +1,18 @@
+button#reg {
+  background-color: skyblue;
+  border: none;
+  border-radius: 10px;
+  padding: 7px 15px;
+}
+
+.list_wrap {
+  width: 700px;
+  margin: 0 auto;
+}
+#bucket_list {
+  padding: 30px;
+}
+.list {
+  padding: 15px o;
+  font-size: 25px;
+}
